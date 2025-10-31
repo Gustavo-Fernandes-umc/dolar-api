@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cotação do Dólar (USD/BRL)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Cotação do Dólar — USD/BRL</h1>
+
+        <div id="status" class="status" aria-live="polite"></div>
+
+        <div class="grid">
+          <div class="metric">
+            <span class="label">Valor atual</span>
+            <span id="currentValue" class="value">—</span>
+          </div>
+
+          <div class="metric">
+            <span class="label">Maior valor do dia</span>
+            <span id="highValue" class="value">—</span>
+          </div>
+
+          <div class="metric">
+            <span class="label">Menor valor do dia</span>
+            <span id="lowValue" class="value">—</span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="fetchBtn" type="button">Buscar cotação</button>
+          <small id="updatedAt" class="updated">—</small>
+        </div>
+
+        <footer class="footnote">
+          Fonte:
+          <a
+            href="https://docs.awesomeapi.com.br/api-de-moedas"
+            target="_blank"
+            rel="noopener noreferrer"
+            >AwesomeAPI</a
+          >
+        </footer>
+      </section>
+    </main>
+
+    <noscript>Ative o JavaScript para carregar a cotação.</noscript>
+    <script src="script.js"></script>
+  </body>
+</html>
